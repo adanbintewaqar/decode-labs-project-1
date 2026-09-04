@@ -92,3 +92,30 @@ This repository contains a full end-to-end data processing, predictive regressio
 ## File Structure
 - `Project_1_Advanced_EDA.ipynb`: Complete, fully-documented Google Colab notebook.
 - `Cleaned_Data_Analytics_Dataset.csv`: Cleaned output dataset.
+
+# End-to-End E-Commerce Data Analytics & Machine Learning Suite
+
+## Project Overview
+An end-to-end data analytics and predictive modeling suite built for DecodeLabs using Python and Google Colab. The project handles data ingestion, outlier treatment, feature engineering, regression modeling, multi-class classification, hyperparameter optimization, model interpretability, and interactive web application deployment.
+
+---
+
+## Pipeline Architecture
+
+| Module | Objective | Technique / Algorithm | Primary Metric |
+| :--- | :--- | :--- | :--- |
+| **1. Data Preprocessing** | Imputation & Outlier Mitigation | Median/Fallback Imputation, IQR Clipping | Clean Data Matrix |
+| **2. Feature Engineering** | Domain Feature Creation | Ratio & Binary Date Transformations | 4 Engineered Columns |
+| **3. Regression** | Continuous Price Prediction | Linear Regression | R² Score / MAE |
+| **4. Classification** | Order Status Categorization | Multi-Class Random Forest | Classification Accuracy |
+| **5. Interpretability** | Feature Impact Analysis | Gini Importance Extraction | Feature Ranking |
+| **6. Optimization** | Model Tuning & Selection | GridSearchCV vs. Logistic Regression | Optimized Hyperparameters |
+| **7. Deployment** | Interactive Web Demo | Gradio Interface Integration | Real-time Inference App |
+
+---
+
+## Executive Key Findings
+1. **Predictive Accuracy**: Tree-based estimators provided robust multi-class order tracking predictions across fulfillment states.
+2. **Core Price Drivers**: Features such as `Quantity`, `UnitPrice`, and `AvgPricePerCartItem` captured over 70% of variation in total transaction amounts.
+3. **Operational Value**: Live input testing via Gradio demonstrates real-time decisioning capability for e-commerce order workflows.
+4. <img width="1879" height="815" alt="image" src="https://github.com/user-attachments/assets/282da2d4-2d67-4a8e-8675-d6b6822728de" />
