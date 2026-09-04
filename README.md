@@ -118,4 +118,4 @@ An end-to-end data analytics and predictive modeling suite built for DecodeLabs 
 1. **Predictive Accuracy**: Tree-based estimators provided robust multi-class order tracking predictions across fulfillment states.
 2. **Core Price Drivers**: Features such as `Quantity`, `UnitPrice`, and `AvgPricePerCartItem` captured over 70% of variation in total transaction amounts.
 3. **Operational Value**: Live input testing via Gradio demonstrates real-time decisioning capability for e-commerce order workflows.
-4. <img width="1879" height="815" alt="image" src="https://github.com/user-attachments/assets/282da2d4-2d67-4a8e-8675-d6b6822728de" />
+ <img width="1879" height="815" alt="image" src="https://github.com/user-attachments/assets/282da2d4-2d67-4a8e-8675-d6b6822728de" />
