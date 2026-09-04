@@ -52,3 +52,9 @@ This repository contains an end-to-end data analytics and predictive modeling pi
 ## File Structure
 - `Project_1_Advanced_EDA.ipynb`: Complete Google Colab notebook with clean, executable code for both stages.
 - `Cleaned_Data_Analytics_Dataset.csv`: Final preprocessed and engineered dataset ready for analysis.
+
+### 3. Supervised Classification (Project 3)
+- **Problem Type**: Multi-Class Classification (Target: `OrderStatus`).
+- **Algorithm**: Random Forest Classifier (`n_estimators=100`).
+- **Data Splitting**: Stratified 80/20 Train-Test split.
+- **Performance Evaluation**: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix metrics.
