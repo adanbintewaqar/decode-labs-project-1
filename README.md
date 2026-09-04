@@ -21,3 +21,34 @@ This project processes raw e-commerce order data using an Input-Process-Output (
 ## Project Structure
 - `Project_1_Advanced_EDA.ipynb`: Complete Google Colab notebook containing executable code.
 - `Cleaned_Data_Analytics_Dataset.csv`: Exported production-ready dataset.
+
+# Data Analytics & Machine Learning Pipeline
+
+## Project Overview
+This repository contains an end-to-end data analytics and predictive modeling pipeline built in Python using Google Colab. The project processes raw e-commerce transaction data, cleans missing values, neutralizes outliers, engineers features, and trains machine learning models to predict order prices.
+
+---
+
+## Key Pipeline Stages
+
+### 1. Advanced EDA & Feature Engineering (Project 1)
+- **Missing Value Imputation**: Imputed missing values in `CouponCode` (25.75% missingness) using a categorical fallback (`NO_COUPON`).
+- **Outlier Mitigation**: Calculated IQR boundaries ($Q_1 - 1.5 \times \text{IQR}$ and $Q_3 + 1.5 \times \text{IQR}$) and capped extreme numerical values (`Quantity`, `UnitPrice`, `ItemsInCart`, `TotalPrice`) using `numpy.clip()`.
+- **Feature Engineering**: Created 4 domain-specific features:
+  - `Has_Coupon`: Binary indicator for promo code usage.
+  - `Is_Weekend`: Binary flag extracted from transaction dates.
+  - `AvgPricePerCartItem`: Ratio of total order price to items in cart.
+  - `QuantityToCartRatio`: Proportion of ordered product quantity relative to overall cart size.
+- **Categorical Encoding**: One-Hot Encoded non-ordinal categories using `pd.get_dummies()`.
+
+### 2. Predictive Machine Learning (Project 2)
+- **Problem Type**: Supervised Regression (Target: `TotalPrice`).
+- **Data Splitting**: 80% Train Set / 20% Test Set using `train_test_split`.
+- **Model**: Linear Regression.
+- **Performance Evaluation**: Evaluated using R² Score and Mean Absolute Error (MAE).
+
+---
+
+## File Structure
+- `Project_1_Advanced_EDA.ipynb`: Complete Google Colab notebook with clean, executable code for both stages.
+- `Cleaned_Data_Analytics_Dataset.csv`: Final preprocessed and engineered dataset ready for analysis.
