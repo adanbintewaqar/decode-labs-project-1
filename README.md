@@ -58,3 +58,37 @@ This repository contains an end-to-end data analytics and predictive modeling pi
 - **Algorithm**: Random Forest Classifier (`n_estimators=100`).
 - **Data Splitting**: Stratified 80/20 Train-Test split.
 - **Performance Evaluation**: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix metrics.
+# End-to-End Data Analytics & Machine Learning Pipeline
+
+## Project Overview
+This repository contains a full end-to-end data processing, predictive regression, supervised classification, and model interpretability pipeline built using Python and Google Colab for DecodeLabs.
+
+---
+
+## Pipeline Summary
+
+### Module 1: Advanced EDA & Feature Engineering
+- Imputed missing `CouponCode` values with `NO_COUPON`.
+- Capped numerical outliers (`Quantity`, `UnitPrice`, `ItemsInCart`, `TotalPrice`) using IQR boundaries.
+- Engineered features: `Has_Coupon`, `Is_Weekend`, `AvgPricePerCartItem`, `QuantityToCartRatio`.
+- One-Hot Encoded categorical attributes.
+
+### Module 2: Predictive Regression Modeling
+- **Task**: Continuous prediction of `TotalPrice`.
+- **Model**: Linear Regression.
+- **Metrics**: R² Score and Mean Absolute Error (MAE).
+
+### Module 3: Supervised Multi-Class Classification
+- **Task**: Predict transaction `OrderStatus` (Delivered, Pending, Cancelled, Returned, Shipped).
+- **Model**: Random Forest Classifier (`n_estimators=100`).
+- **Metrics**: Accuracy, Precision, Recall, and F1-Score.
+
+### Module 4: Model Interpretability & Feature Analysis
+- Extracted Gini importance metrics from tree-based estimators.
+- Quantified domain feature contributions to model decision boundaries.
+
+---
+
+## File Structure
+- `Project_1_Advanced_EDA.ipynb`: Complete, fully-documented Google Colab notebook.
+- `Cleaned_Data_Analytics_Dataset.csv`: Cleaned output dataset.
